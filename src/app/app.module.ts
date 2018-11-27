@@ -18,6 +18,10 @@ import { ManageTabComponent } from './components/manage-tab/manage-tab.component
 import { CoursesTabComponent } from './components/courses-tab/courses-tab.component';
 import { GlobalInterceptor } from './config/HttpInterceptor';
 import { ResetPasswordBottomsheetComponent } from './components/reset-password-bottomsheet/reset-password-bottomsheet.component';
+import { StudentShellComponent } from './components/student-shell/student-shell.component';
+import { StundentCoursesComponent } from './components/stundent-courses/stundent-courses.component';
+import { StundentDashboardComponent } from './components/stundent-dashboard/stundent-dashboard.component';
+import { StundentSettingsComponent } from './components/stundent-settings/stundent-settings.component';
 
 const lmsRoutes: Routes = LMSRouter;
 
@@ -43,7 +47,11 @@ const lmsRoutes: Routes = LMSRouter;
     CoursesTabComponent,
     ConfirmDeleteDialog,
     ConfirmDeleteCourseDialog,
-    ResetPasswordBottomsheetComponent
+    ResetPasswordBottomsheetComponent,
+    StudentShellComponent,
+    StundentCoursesComponent,
+    StundentDashboardComponent,
+    StundentSettingsComponent
   ],
   entryComponents: [ConfirmDeleteDialog,ConfirmDeleteCourseDialog, ResetPasswordBottomsheetComponent],
   providers: [
