@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {QuillModule} from 'ngx-quill';
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 import { MaterialModule } from './material.module';
 import { LMSRouter } from "./config/router";
@@ -29,7 +30,8 @@ const lmsRoutes: Routes = LMSRouter;
     HttpClientModule,
     RouterModule.forRoot(lmsRoutes),
     ReactiveFormsModule,
-    QuillModule
+    QuillModule,
+    FlexLayoutModule
   ],
   declarations: [
     AppComponent,
